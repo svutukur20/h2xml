@@ -5,6 +5,7 @@ on:
     types: [opened, synchronize, reopened, ready_for_review, review_requested]
   pull_request_review:
     types: [submitted]
+
  
 jobs:
   check-approvals:
@@ -34,4 +35,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - run: echo "Running because 2 approvals are present"
