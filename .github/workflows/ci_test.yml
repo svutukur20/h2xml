@@ -1,5 +1,5 @@
 
-name: CI only after 2 approvals
+name: CsI only after 2 approvals
 
 on:
   pull_request:
@@ -73,3 +73,4 @@ jobs:
           echo "Approval count: ${{ needs.check-approvals.outputs.count }}"
           echo "Running because at least 2 approvals are present."
           # Place your real CI steps here (build/test/deploy etc.)
+
